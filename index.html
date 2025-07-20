@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account Notification - Facebook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="https://cdn.glitch.global/d9a1111a-d0ad-4fa6-aeec-3c8aa027f796/Facebook_Logo_2023.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f6f7f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #dcdfe3;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.5rem;
+    }
+
+    .header img {
+      width: 36px;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1c1e21;
+    }
+
+    .content {
+      margin-bottom: 1.5rem;
+    }
+
+    .content h2 {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .content p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .note {
+      background-color: #eef3ff;
+      border-left: 4px solid #1877f2;
+      padding: 10px 15px;
+      margin: 1rem 0;
+      font-size: 13px;
+      color: #2d3a4b;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 24px;
+      background-color: #1877f2;
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #145bd1;
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 1.5rem;
+      }
+
+      .header h1 {
+        font-size: 18px;
+      }
+
+      .content h2 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <img src="https://cdn.glitch.global/d9a1111a-d0ad-4fa6-aeec-3c8aa027f796/Facebook_Logo_2023.png" alt="Facebook Logo">
+      <h1>Meta Account Security</h1>
+    </div>
+    <div class="content">
+      <h2>Important Notice Regarding Your Page</h2>
+      <p>
+        We’ve identified activity on your page that may violate our Community Standards. As part of our standard procedure, we’ve temporarily restricted certain features.
+      </p>
+    </div>
+    <div class="note">
+      Please request a review within 48 hours to avoid permanent removal of your page or account.
+    </div>
+    <a class='btn' href='/request'>Review Now</a>
+  </div>
+</body>
+</html>
